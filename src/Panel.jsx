@@ -51,7 +51,10 @@ const CollapsePanel = React.createClass({
           role="tab"
           aria-expanded={isActive}
         >
-          {showArrow && <i className="arrow" />}
+          {showArrow && 
+            <svg className='rc-arrow'>
+              <use xlinkHref='#icon-arrow'></use>
+            </svg>}
           {header}
         </div>
         <Animate
